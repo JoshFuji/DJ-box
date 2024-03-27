@@ -12,7 +12,10 @@ function preload() {
   sound5 = loadSound("synth.wav");
 }
 function setup() {
-  createCanvas(400, 400);
+   var canvas = createCanvas(400, 400);
+
+   canvas.parent('project');
+
   background(220);
   delay = new p5.Delay();
 }
